@@ -144,6 +144,7 @@ specified by your `KUBECONFIG` current context as shown by `kubectl config
 current-context` run:
 
 ```shell
+# from $GOPATH/src/github.com/tektoncd/pipeline/ directory
 ko apply -f config/
 ```
 
@@ -153,6 +154,7 @@ To perform a basic test of a `PipelineRun` execution of a `Pipeline` with a
 `Task`, execute:
 
 ```shell
+# from secure-supply-chain/ directory
 kubectl apply -f config/tekton/hello-world-pipeline.yaml
 ```
 
@@ -170,6 +172,7 @@ $ tkn pipelinerun logs -f sample-pipeline-run
 Once you're done, feel free to delete the Tekton resources used for this test:
 
 ```shell
+# from secure-supply-chain/ directory
 kubectl delete -f config/tekton/hello-world-pipeline.yaml
 ```
 
@@ -178,6 +181,7 @@ kubectl delete -f config/tekton/hello-world-pipeline.yaml
 As you make changes to the code, you can redeploy your controller with:
 
 ```shell
+# from $GOPATH/src/github.com/tektoncd/pipeline/ directory
 ko apply -f config/controller.yaml
 ```
 
@@ -186,6 +190,7 @@ ko apply -f config/controller.yaml
 You can clean up the Tekton Pipeline installation with:
 
 ```shell
+# from $GOPATH/src/github.com/tektoncd/pipeline/ directory
 ko delete -f config/
 ```
 
