@@ -18,7 +18,8 @@ These are the various prerequisites that you'll need to work through this guide.
 - [docker](https://docs.docker.com/engine/install/) for using `kind`. Make sure
   you `docker login` first if you have not done so already.
 - [kind](https://kind.sigs.k8s.io/) will be used to set up a quick and
-  lightweight Kubernetes cluster. Kubernetes vresion >= 1.15 is required.
+  lightweight Kubernetes cluster. Kubernetes vresion >= 1.15 is required. This
+  was tested with `v0.8.1`.
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) is the
   Kubernetes client required to interact with a Kubernetes cluster. Make sure
   its version is also >= 1.15.
@@ -31,9 +32,9 @@ These are the various prerequisites that you'll need to work through this guide.
       [GitHub](https://help.github.com/en/github/getting-started-with-github/set-up-git).
     - [ko](https://github.com/google/ko) version >= v0.1 is required to work
       with and deploy development versions of Tekton. Make sure it's available
-      in your `PATH`.
+      in your `PATH`. This was tested with `v0.5.1`.
     - [tkn](https://github.com/tektoncd/cli) is the Tekton CLI for interacting
-      with Tekton.
+      with Tekton. This was tested with `v0.9.0`.
 
 ## Create Kubernetes Cluster and Container Registry
 
